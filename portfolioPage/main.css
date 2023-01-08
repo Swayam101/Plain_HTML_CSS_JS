@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+
+:root {
+    --font: 'Montserrat', sans-serif;
+}
+
+body{
+    max-height: 100vh;
+    display: block;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+header #logo {
+    font-weight: bold;
+    text-shadow: 1px 0 black;
+    font-size: 2rem;
+}
+
+.dot {
+    color: orange;
+    text-shadow: 0px 0 white;
+}
+
+nav ul {
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul li {
+    display: inline;
+    font-weight: 700;
+}
+
+.chatButton {
+    font-weight: 900;
+    border: 2px solid black;
+    padding: 0.7rem;
+    padding: 0.5rem 0.8rem;
+}
+
+main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main #leftSection {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#leftSection #leftTop {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+#leftTop .strongest {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 10rem;
+}
+
+.strongest .skillIcon {
+    font-size: 1.7rem;
+    font-weight: 500;
+    background-color: #5562FF;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10%/30%;
+}
+
+#leftTop .smallDesc {
+    align-self: flex-start;
+    width: 100%;
+    padding: 1.3rem 10rem;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.other {
+    display: grid;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: larger;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1.3rem 10rem;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+}
+
+.other .hireButton {
+    background-color: orangered;
+    padding: 1.6rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    height: 50%;
+}
+
+
+.other .clientInfo{
+    width: 10rem;
+}
+
+.other #MyIcon{
+    font-size: 4rem;
+    
+}
+
+#rightSection{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    background-image: url('bitmoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30vh;
+}
+
+#SearchBar{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+#SearchBar input{
+   font-size: 1.5rem;
+   padding: 0.5rem;
+   width: 90%;
+}
